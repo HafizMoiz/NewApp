@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent"
+    android:background="@drawable/backround"
+    tools:context=".RegistorActivity">
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_weight="3"
+      >
+
+      <TextView
+          android:id="@+id/logo"
+          android:layout_width="200dp"
+          android:layout_height="wrap_content"
+          android:paddingLeft="20dp"
+          android:text="REGISTOR"
+          android:layout_centerInParent="true"
+          android:textColor="#ffffff"
+          android:textSize="35dp"
+          android:textStyle="bold" />
+
+  </RelativeLayout>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/username"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:hint="USER NAME"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/person"
+        android:id="@+id/Rusername"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/username"
+        android:layout_marginRight="25dp"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:hint="Email / Phone Number"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/email"
+        android:id="@+id/Rmail"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/username"
+        android:layout_marginRight="25dp"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:layout_marginLeft="25dp"
+        android:hint="Enter password"
+        android:drawablePadding="20dp"
+        android:paddingLeft="20dp"
+        android:drawableLeft="@drawable/security"
+        android:id="@+id/Rpassword"/>
+  <EditText
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginTop="15dp"
+      android:background="@drawable/username"
+      android:layout_marginRight="25dp"
+      android:textColorHint="@color/white"
+      android:layout_marginLeft="25dp"
+      android:inputType="textPassword"
+      android:hint="Confirm Password"
+      android:drawablePadding="20dp"
+      android:paddingLeft="20dp"
+      android:drawableLeft="@drawable/security"
+      android:id="@+id/Rcpassword"/>
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="50dp"
+      android:layout_marginLeft="25dp"
+      android:layout_marginRight="25dp"
+      android:layout_marginTop="15dp"
+      android:onClick="registor"
+      android:background="@drawable/btn"
+      android:text="REGISTOR"
+      android:textColor="#000"
+      android:textSize="20dp"
+      android:id="@+id/registorbtn"/>
+  <TextView
+      android:layout_width="300dp"
+      android:layout_height="40dp"
+      android:background="@drawable/username"
+      android:layout_marginTop="15dp"
+      android:layout_marginLeft="78dp"
+      android:text="Already have an account !!"
+      android:gravity="center"
+      android:onClick="already"
+      android:textSize="20dp"
+      android:textColor="#fff"
+    android:id="@+id/already"/>
+
+
+</LinearLayout>

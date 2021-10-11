@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/backround"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+              <TextView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="100dp"
+                  android:text="LOGIN"
+                  android:textStyle="bold"
+                  android:textColor="#ffffff"
+                  android:textSize="45dp"
+                  android:gravity="center"
+                  android:id="@+id/logtext"/>
+
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="30dp"
+           android:background="@drawable/username"
+           android:layout_marginRight="25dp"
+           android:textColorHint="@color/white"
+           android:layout_below="@id/logtext"
+           android:layout_marginLeft="25dp"
+           android:hint="Email / Phone Number"
+           android:drawablePadding="20dp"
+           android:paddingLeft="20dp"
+           android:drawableLeft="@drawable/email"
+           android:id="@+id/mail"/>
+       <EditText
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginTop="15dp"
+           android:layout_below="@id/mail"
+           android:background="@drawable/username"
+           android:layout_marginRight="25dp"
+           android:inputType="textPassword"
+           android:password="true"
+           android:textColorHint="@color/white"
+           android:layout_marginLeft="25dp"
+           android:hint="Enter password"
+           android:drawablePadding="20dp"
+           android:paddingLeft="20dp"
+           android:drawableLeft="@drawable/security"
+           android:id="@+id/password"/>
+       <TextView
+           android:layout_width="280dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="15dp"
+           android:layout_below="@id/password"
+           android:layout_marginLeft="118dp"
+           android:text="Forget Password ?"
+           android:paddingLeft="105dp"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:textColor="#fff"
+           android:id="@+id/forget"/>
+       <Button
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:layout_marginLeft="25dp"
+           android:layout_below="@id/forget"
+           android:onClick="login"
+           android:layout_marginRight="25dp"
+           android:layout_marginTop="15dp"
+           android:background="@drawable/btn"
+           android:text="LOGIN"
+           android:gravity="center"
+           android:textColor="#5E71DA"
+           android:textSize="27dp"
+           android:id="@+id/loginbtn"/>
+       <TextView
+           android:layout_width="310dp"
+           android:layout_height="40dp"
+           android:layout_marginTop="15dp"
+           android:layout_below="@id/loginbtn"
+           android:onClick="dontaccount"
+           android:layout_marginLeft="75dp"
+           android:text="Don,t Have An Account ! Sign Up?"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:textColor="#fff"
+           android:id="@+id/dontaccount"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/google"
+        android:layout_width="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="80dp"
+        android:layout_height="75dp"
+       android:layout_below="@id/dontaccount"
+        android:src="@drawable/download"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#fff"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/fb"
+        android:layout_width="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="55dp"
+        android:layout_height="75dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/dontaccount"
+        android:src="@drawable/fb"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#ffff"/>
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:text="Connect Google"
+        android:textColor="#ffffff"
+        android:layout_below="@id/google"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_marginLeft="30dp"
+        android:id="@+id/googletext"/>
+    <TextView
+        android:layout_width="170dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:text="Connect Facebook"
+        android:layout_marginRight="20dp"
+        android:textColor="#ffffff"
+        android:layout_below="@id/fb"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:id="@+id/fbtext"/>
+</RelativeLayout>
+

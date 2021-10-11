@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">New App</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="title_activity_maps_java">Map</string>
+<!--    <string name="login_shared_prefrence">com.example.newapp_login_shared_prefrence</string>-->
+<!--    <string name="login_status_shared_prefrence">com.example.newapp_login_status_shared_prefrence</string>-->
+<!--    <string name="mail">trueline</string>-->
+<!--    <string name="password">solution</string>-->
+
+</resources>
